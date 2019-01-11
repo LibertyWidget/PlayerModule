@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jz_red">#ff4a64</color><!-- @update by xjunjie@gmail.com 1.5.0 统一标准色卡  -->
+    <color name="jz_deepgray">#969696</color>
+</resources>
