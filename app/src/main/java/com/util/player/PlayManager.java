@@ -35,13 +35,13 @@ public class PlayManager {
         UniversalPlayerView.setMediaInterface(new ExoPlayer());
     }
 
-    private void onSettingPlay(LinkedHashMap map, String title) {
+    public void onSettingPlay(LinkedHashMap map, String title) {
         DataSource dataSource = new DataSource(map);
         dataSource.title = title;
         this.mUniversalPlayerView.play(dataSource, UniversalPlayerView.SCREEN_WINDOW_NORMAL);
     }
 
-    private void onSettingPlay(String url, String title) {
+    public void onSettingPlay(String url, String title) {
         LinkedHashMap<String, String> map = new LinkedHashMap<>();
         map.put(title, url);
         DataSource dataSource = new DataSource(map);
@@ -49,11 +49,11 @@ public class PlayManager {
         this.mUniversalPlayerView.play(dataSource, UniversalPlayerView.SCREEN_WINDOW_NORMAL);
     }
 
-    protected void onResume() {
+    public void onResume() {
         onPause();
     }
 
-    protected void onPause() {
+    public void onPause() {
         UniversalPlayerView.goOnPlayOnPause();
     }
 
