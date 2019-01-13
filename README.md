@@ -8,12 +8,13 @@
 https://github.com/lipangit/JiaoZiVideoPlayer
 
             
-      AndroidManifest.xml
+AndroidManifest.xml
            
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             
+MainActivity.java
 
       public class MainActivity extends AppCompatActivity {
             @Override
@@ -21,7 +22,7 @@ https://github.com/lipangit/JiaoZiVideoPlayer
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_main);
                 UniversalPlayerView baseUniversalPlayerView = findViewById(R.id.playerView);
-                String url = "http://h1.aaccy.com/ckplayer/pptv/sj.1.m3u8?ts=1547346666&key=bc74200750474ea4e41502f18108bed4&id=xtpiRfZWsByNmM1EHf8KVg";
+                String url = "播放地址";
                 PlayManager.$().init(baseUniversalPlayerView);
                 PlayManager.$().onSettingPlay(url, "title");
             }
@@ -50,7 +51,8 @@ https://github.com/lipangit/JiaoZiVideoPlayer
                 super.onPause();
             }
       }
-      
+activity_main.xml
+
       <com.util.player.UniversalPlayerView
         android:id="@+id/playerView"
         android:layout_width="match_parent"
