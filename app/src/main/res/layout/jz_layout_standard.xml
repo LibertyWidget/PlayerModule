@@ -27,7 +27,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/jz_bottom_bg"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/current"
@@ -115,7 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/jz_title_bg"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/back"
