@@ -29,8 +29,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/jz_bottom_bg"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:visibility="invisible">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/current"
@@ -61,7 +60,6 @@
             android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
             android:text="00:00"
             android:textColor="#ffffff" />
 
@@ -70,10 +68,11 @@
             android:id="@+id/clarityView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
             android:text="超清"
+            android:visibility="gone"
             android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:visibility="gone" />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/episodeView"
@@ -81,16 +80,16 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:text="选集"
+            android:visibility="gone"
             android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:visibility="gone" />
+            android:textColor="#ffffff" />
 
         <ImageView
             android:id="@+id/fullscreen"
             android:layout_width="50dp"
             android:layout_height="fill_parent"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             android:scaleType="centerInside"
             android:src="@drawable/jz_enlarge" />
     </LinearLayout>
