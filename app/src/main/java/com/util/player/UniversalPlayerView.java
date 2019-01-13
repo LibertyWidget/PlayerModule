@@ -82,7 +82,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
     public ImageView mDialogIcon;
     public ImageView mDialogVolumeImageView;
     public ImageView batteryLevel, lockView;
-    public ImageView backButton;
+    public LinearLayout backButton;
     public ImageView thumbImageView;
     public ImageView tinyBackImageView;
     //播放类型
