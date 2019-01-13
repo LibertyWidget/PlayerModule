@@ -7,6 +7,14 @@
 
 https://github.com/lipangit/JiaoZiVideoPlayer
 
+            
+      AndroidManifest.xml
+           
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            
+
       public class MainActivity extends AppCompatActivity {
             @Override
             protected void onCreate(Bundle savedInstanceState) {
@@ -42,3 +50,8 @@ https://github.com/lipangit/JiaoZiVideoPlayer
                 super.onPause();
             }
       }
+      
+      <com.util.player.UniversalPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
