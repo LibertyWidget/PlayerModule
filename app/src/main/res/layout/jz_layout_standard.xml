@@ -233,7 +233,7 @@
         android:indeterminateDrawable="@drawable/jz_loading"
         android:visibility="invisible" />
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/start_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -245,13 +245,7 @@
             android:id="@+id/start"
             android:layout_width="@dimen/jz_start_button_w_h_normal"
             android:layout_height="@dimen/jz_start_button_w_h_normal" />
-        <TextView
-            android:id="@+id/logTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/video_loading_log" />
-    </FrameLayout>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/replay_text"
@@ -271,7 +265,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="gone"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 

@@ -80,7 +80,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
     public TextView titleTextView;
 
     public ImageView mDialogIcon;
-    public TextView logTextView;
     public ImageView mDialogVolumeImageView;
     public ImageView batteryLevel, lockView;
     public LinearLayout backButton;
@@ -136,8 +135,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
         this.titleTextView.setVisibility(GONE);
         this.backButton = findViewById(R.id.back);
         this.thumbImageView = findViewById(R.id.thumb);
-        this.logTextView = findViewById(R.id.logTextView);
-        this.logTextView.setVisibility(VISIBLE);
         this.loadingProgressBar = findViewById(R.id.loading);
         this.tinyBackImageView = findViewById(R.id.back_tiny);
         this.batteryLevel = findViewById(R.id.battery_level);
@@ -194,7 +191,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
             UniversalPlayerMgr.setFirstFloor(this);
             backPress();
         }
-        logTextView.setVisibility(GONE);
     }
 
     public void changeStartButtonSize(int size) {
@@ -328,7 +324,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
         int i = v.getId();
         if (i == R.id.thumb) {
             if (null == jzDataSource || jzDataSource.urlsMap == null || jzDataSource.urlsMap.isEmpty() || jzDataSource.getCurrentUrl() == null) {
-                Toast.makeText(getContext(), getResources().getString(R.string.no_url), Toast.LENGTH_SHORT).show();
                 return;
             }
             if (currentState == CURRENT_STATE_NORMAL) {
@@ -356,7 +351,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
             }
         } else if (i == R.id.retry_btn) {
             if (jzDataSource.urlsMap.isEmpty() || jzDataSource.getCurrentUrl() == null) {
-                Toast.makeText(getContext(), getResources().getString(R.string.no_url), Toast.LENGTH_SHORT).show();
                 return;
             }
             if (!jzDataSource.getCurrentUrl().toString().startsWith("file") && !

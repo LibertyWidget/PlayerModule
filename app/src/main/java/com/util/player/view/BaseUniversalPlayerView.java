@@ -462,7 +462,6 @@ public abstract class BaseUniversalPlayerView extends FrameLayout implements Vie
         int i = v.getId();
         if (i == R.id.start) {
             if (null == jzDataSource || jzDataSource.urlsMap == null || jzDataSource.urlsMap.isEmpty() || jzDataSource.getCurrentUrl() == null) {
-               // Toast.makeText(getContext(), getResources().getString(R.string.no_url), Toast.LENGTH_SHORT).show();
                 return;
             }
             if (currentState == CURRENT_STATE_NORMAL) {
