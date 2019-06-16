@@ -80,6 +80,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
     public TextView titleTextView;
 
     public ImageView mDialogIcon;
+    public TextView logTextView;
     public ImageView mDialogVolumeImageView;
     public ImageView batteryLevel, lockView;
     public LinearLayout backButton;
@@ -135,6 +136,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
         this.titleTextView.setVisibility(GONE);
         this.backButton = findViewById(R.id.back);
         this.thumbImageView = findViewById(R.id.thumb);
+        this.logTextView = findViewById(R.id.logTextView);
         this.loadingProgressBar = findViewById(R.id.loading);
         this.tinyBackImageView = findViewById(R.id.back_tiny);
         this.batteryLevel = findViewById(R.id.battery_level);
@@ -159,6 +161,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
     }
 
     public void play(DataSource jzDataSource, int screen) {
+        logTextView.setVisibility(GONE);
         super.play(jzDataSource, screen);
         this.whereFromDownPlay = false;
         if (currentScreen == SCREEN_WINDOW_FULLSCREEN) {
