@@ -9,4 +9,5 @@
     <string name="no_url">播放地址无效</string>
     <string name="replay">重播</string>
     <string name="video_loading_faild">失败重试</string>
+    <string name="video_loading_log">资源加载中…</string>
 </resources>

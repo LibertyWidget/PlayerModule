@@ -244,8 +244,7 @@
         <ImageView
             android:id="@+id/start"
             android:layout_width="@dimen/jz_start_button_w_h_normal"
-            android:layout_height="@dimen/jz_start_button_w_h_normal"
-            android:src="@drawable/jz_click_play_selector" />
+            android:layout_height="@dimen/jz_start_button_w_h_normal" />
     </LinearLayout>
 
     <TextView
