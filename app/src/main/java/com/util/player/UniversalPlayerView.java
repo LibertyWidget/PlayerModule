@@ -137,6 +137,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
         this.backButton = findViewById(R.id.back);
         this.thumbImageView = findViewById(R.id.thumb);
         this.logTextView = findViewById(R.id.logTextView);
+        this.logTextView.setVisibility(VISIBLE);
         this.loadingProgressBar = findViewById(R.id.loading);
         this.tinyBackImageView = findViewById(R.id.back_tiny);
         this.batteryLevel = findViewById(R.id.battery_level);
@@ -161,7 +162,6 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
     }
 
     public void play(DataSource jzDataSource, int screen) {
-        logTextView.setVisibility(GONE);
         super.play(jzDataSource, screen);
         this.whereFromDownPlay = false;
         if (currentScreen == SCREEN_WINDOW_FULLSCREEN) {
@@ -194,6 +194,7 @@ public class UniversalPlayerView extends BaseUniversalPlayerView {
             UniversalPlayerMgr.setFirstFloor(this);
             backPress();
         }
+        logTextView.setVisibility(GONE);
     }
 
     public void changeStartButtonSize(int size) {
